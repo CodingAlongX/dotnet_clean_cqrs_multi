@@ -1,0 +1,18 @@
+@page
+@model Employee.WebApp.Pages.Employees
+
+@{
+    ViewData["Title"] = "Employees";
+}
+
+<div class="container">
+    <h1>Employees</h1>
+    <p>
+        <ul>
+        @foreach (var employee in Model.EmployeeResponses)
+        {
+            <li class="list-item">@employee.EmployeeId  - @employee.FirstName</li>
+        }
+        </ul>
+    </p>
+</div>

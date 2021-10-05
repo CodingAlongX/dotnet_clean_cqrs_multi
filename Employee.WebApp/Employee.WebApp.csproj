@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Employee.Application\Employee.Application.csproj" />
+      <ProjectReference Include="..\Employee.Infrastructure\Employee.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="AutoMapper.Extensions.Microsoft.DependencyInjection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=e767ac9c89543656">
+        <HintPath>..\..\..\.nuget\packages\automapper.extensions.microsoft.dependencyinjection\8.1.1\lib\netstandard2.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll</HintPath>
+      </Reference>
+      <Reference Include="MediatR.Extensions.Microsoft.DependencyInjection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=bb9a41a5e8aaa7e2">
+        <HintPath>..\..\..\.nuget\packages\mediatr.extensions.microsoft.dependencyinjection\9.0.0\lib\netstandard2.0\MediatR.Extensions.Microsoft.DependencyInjection.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

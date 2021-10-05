@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employee.Core", "Employee.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employee.Infrastructure", "Employee.Infrastructure\Employee.Infrastructure.csproj", "{835287FB-97E2-455C-930D-EAAA4A87683B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employee.WebApp", "Employee.WebApp\Employee.WebApp.csproj", "{2D933D6B-B877-4E5E-A7AB-ADC72A3BD33B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{835287FB-97E2-455C-930D-EAAA4A87683B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{835287FB-97E2-455C-930D-EAAA4A87683B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{835287FB-97E2-455C-930D-EAAA4A87683B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D933D6B-B877-4E5E-A7AB-ADC72A3BD33B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D933D6B-B877-4E5E-A7AB-ADC72A3BD33B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D933D6B-B877-4E5E-A7AB-ADC72A3BD33B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D933D6B-B877-4E5E-A7AB-ADC72A3BD33B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
