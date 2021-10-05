@@ -1,3 +1,7 @@
+using System.Reflection;
+using Employee.Application.Handlers;
+using Employee.Infrastructure;
+using MediatR;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +10,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new() {Title = "Employee.API", Version = "v1"}); });
+builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddAutoMapper(typeof(IStartup));
+builder.Services.AddMediatR(typeof(CreateEmployeeHandler).GetTypeInfo().Assembly);
 
 var app = builder.Build();
 
