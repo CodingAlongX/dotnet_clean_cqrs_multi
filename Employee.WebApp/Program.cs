@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddAutoMapper(typeof(IStartup));
-builder.Services.AddMediatR(typeof(CreateEmployeeHandler).GetTypeInfo().Assembly);
+builder.Services.AddMediatR(typeof(IStartup).GetTypeInfo().Assembly);
 
 
 var app = builder.Build();

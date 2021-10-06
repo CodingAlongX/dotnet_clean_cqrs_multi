@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Employee.Core.Repositories.Base;
 
 namespace Employee.Core.Repositories;

@@ -15,6 +15,7 @@ public class Employees : PageModel
     {
         _mediator = mediator;
     }
+    
     public async Task OnGetAsync()
     {
         var query = new GetAllEmployeeQuery();

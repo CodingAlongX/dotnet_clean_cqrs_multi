@@ -12,7 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new() {Title = "Employee.API", Version = "v1"}); });
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddAutoMapper(typeof(IStartup));
-builder.Services.AddMediatR(typeof(CreateEmployeeHandler).GetTypeInfo().Assembly);
+builder.Services.AddMediatR(typeof(IStartup).GetTypeInfo().Assembly);
 
 var app = builder.Build();
 
